@@ -1,0 +1,77 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+/*============================================================================*/
+/*Styles of header*/
+
+.btn-login-signup{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/*============================================================================*/
+
+
+/*Style of Home*/
+.img-home{
+  max-width: 500px;
+}
+
+/*Styles of glaery*/
+.img-galery{
+  margin-top: 0 auto;
+  width: 100%;
+}
+
+.mediaPlay{
+  padding-top: 15px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+/*Styles of Podcast*/
+audio{
+  width: 100%;
+}
+
+/*Styles of contacts*/
+.box-contact-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-icon{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 80%;
+}
+
+@media (max-width: 750px){
+  .box-contact-icon{
+    display: none;
+  }
+
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  text-align: center;
+}
+
+footer a, footer span{
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+footer span{
+  font-size: 2em;
+}
