@@ -127,6 +127,7 @@ CREATE TABLE podcasts(
   title varchar(255) not null,
   short_description varchar(255) not null,
   picture varchar(255) null default 'default-podcast-picture.gif',
+  audio varchar(255) not null ,
   date_post date not null,
 
   CONSTRAINT pk_events PRIMARY KEY (id)
