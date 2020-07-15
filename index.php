@@ -2,6 +2,7 @@
 
   require 'database/conexion.php';
   require 'helpers/alerts.php';
+  require 'helpers/substract.php';
   require 'includes/header.php';
 
   /*If there dates get for logut*/

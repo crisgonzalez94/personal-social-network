@@ -104,7 +104,7 @@
     </div>
 
     <div class="form-group">
-      <label for="body">Post</label>
+      <label for="body">Write a post</label>
       <textarea class="form-control" id="body" rows="3" name="body" required></textarea>
     </div>
 
