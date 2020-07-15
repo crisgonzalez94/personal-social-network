@@ -1,78 +1,45 @@
+<?php
+
+  /*Get events from database*/
+  $sql = "SELECT * FROM podcasts";
+  $podcasts = mysqli_query($database , $sql);
+
+?>
+
+
 <div class="container">
   <h1>Podcast</h1>
   <hr>
 
-  <div class="card mb-3">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="assets/images/audios/1.jpg" class="card-img" alt="El nuevo album">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <audio controls>
-             <source src="assets/audios/podcast/1.mp3" type="audio/mpeg"></source>
-          </audio>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <?php while($podcast = mysqli_fetch_assoc($podcasts)): ?>
+  <?php
+    $id = $podcast['id'];
+    $title = $podcast['title'];
+    $short_description = $podcast['short_description'];
+    $picture = $podcast['picture'];
+    $audio = $podcast['audio'];
+    $date_post = $podcast['date_post'];
+  ?>
 
   <div class="card mb-3">
     <div class="row no-gutters">
       <div class="col-md-4">
-        <img src="assets/images/audios/1.jpg" class="card-img" alt="El nuevo album">
+        <img src="assets/images/audios/<?= $picture ?>" class="card-img" alt="<?= $short_description ?>">
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title"><?= $title ?></h5>
+          <p class="card-text"><?= $short_description ?></p>
           <audio controls>
-             <source src="assets/audios/podcast/1.mp3" type="audio/mpeg"></source>
+             <source src="assets/audios/podcast/<?= $audio ?>" type="audio/mpeg"></source>
           </audio>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted"><?= $date_post ?></small></p>
         </div>
       </div>
     </div>
   </div>
+  <?php endwhile; ?>
 
-  <div class="card mb-3">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="assets/images/audios/1.jpg" class="card-img" alt="El nuevo album">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <audio controls>
-             <source src="assets/audios/podcast/1.mp3" type="audio/mpeg"></source>
-          </audio>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="card mb-3">
-    <div class="row no-gutters">
-      <div class="col-md-4">
-        <img src="assets/images/audios/1.jpg" class="card-img" alt="El nuevo album">
-      </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <audio controls>
-             <source src="assets/audios/podcast/1.mp3" type="audio/mpeg"></source>
-          </audio>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
