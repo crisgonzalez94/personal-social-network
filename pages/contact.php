@@ -7,23 +7,26 @@
       <div class="col-md-8">
         <div class="card-body">
 
-          <div class="ui massive form">
+          <form action="index.php?page=contact" method="post">
+            <div class="ui massive form">
 
-              <div class="field">
-                <label>Name</label>
-                <input placeholder="First Name" type="text">
-              </div>
-              <div class="field">
-                <label>Email</label>
-                <input placeholder="Last Name" type="text">
-              </div>
-              <div class="field">
-                <label>Mensage</label>
-                <textarea name="name" rows="8" cols="80"></textarea>
-              </div>
+                <div class="field">
+                  <label>Name</label>
+                  <input placeholder="Anna Lopez" type="text" name="name" required>
+                </div>
+                <div class="field">
+                  <label>Email</label>
+                  <input placeholder="example@email.com" type="email" name="email" required>
+                </div>
+                <div class="field">
+                  <label>Mensage</label>
+                  <textarea name="message" rows="8" cols="80" required>How are you John Smith...</textarea>
+                </div>
 
-            <button type="button" class="btn btn-dark btn-lg btn-block">Send Message</button>
-          </div>
+              <button type="submit" class="btn btn-dark btn-lg btn-block">Send Message</button>
+            </div>
+
+          </form>
 
         </div>
       </div>
