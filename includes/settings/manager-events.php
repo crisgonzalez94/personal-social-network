@@ -78,7 +78,6 @@
     }
 
 
-    echo $date_event;
 
     $sql = "INSERT INTO events VALUES(null , '$title' , '$short_description' , '$body' , '$picture_one_name' , '$picture_two_name' , '$date_event' )";
     $upload_event = mysqli_query($database , $sql);
