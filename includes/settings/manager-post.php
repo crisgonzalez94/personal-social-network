@@ -8,6 +8,10 @@
     $title = $_POST['title'];
     $short_description = $_POST['short_description'];
     $body = $_POST['body'];
+
+    /*This is for detect scape sequence*/
+    $body = str_replace("\r","<br>",$body);
+
     $picture = $_FILES['picture'];
 
     /*Verify if there a picture in post*/

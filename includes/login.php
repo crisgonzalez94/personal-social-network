@@ -21,6 +21,7 @@
         if(password_verify($login_password , $user['password']) || $login_password == $user['password']){
 
           //creating a cookie of user
+          setcookie("user[id]" , $user['id'] );
           setcookie("user[username]" , $user['username'] );
           setcookie("user[email]" , $user['email'] );
           setcookie("user[picture]" , $user['picture'] );

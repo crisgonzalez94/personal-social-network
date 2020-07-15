@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="styles/semantic/semantic.min.css">
 
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" type="text/css"  href="styles/style.css">
 
   </head>
   <body>
