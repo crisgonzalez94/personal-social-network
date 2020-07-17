@@ -1,6 +1,10 @@
 <?php
 
-  /*Get events from database*/
+
+
+
+
+  /*Get podcasts from database*/
   $sql = "SELECT * FROM podcasts";
   $podcasts = mysqli_query($database , $sql);
 

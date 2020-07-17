@@ -17,7 +17,7 @@
       if(filter_var($signup_email , FILTER_VALIDATE_EMAIL)){
 
         /*Save user*/
-        $sql = "INSERT INTO users VALUES(null , '$signup_username' , '$signup_email' , '$signup_password' , null , false)";
+        $sql = "INSERT INTO users VALUES(null , '$signup_username' , '$signup_email' , '$signup_password' , 'default-user-picture.jpg' , false)";
         $query = mysqli_query($database , $sql);
 
         if ($query) {

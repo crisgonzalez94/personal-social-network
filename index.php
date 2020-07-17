@@ -7,8 +7,8 @@
 
   /*If there dates get for logut*/
   if(isset($_GET['logout'])){
-    echo "Mierda";
     /*Delete the user cookie and restart*/
+    setcookie('user[id]','', time()-100 );
     setcookie('user[username]','', time()-100 );
     setcookie('user[email]','', time()-100 );
     setcookie('user[photo]','', time()-100 );

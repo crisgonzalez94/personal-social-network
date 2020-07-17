@@ -64,7 +64,12 @@
   if(isset($_GET['delete_post'])){
     $id = $_GET['delete_post'];
 
-    $sql = "DELETE FROM posts WHERE id = '$id' ";
+    /*Delete comentaries in post*/
+    $sql = "DELETE FROM post_coments WHERE id_post = '$id'";
+    $delete_comentaries = mysqli_query($database , $sql);
+
+    /*Delete post*/
+    $sql = "DELETE FROM posts WHERE id = '$id'";
     $delete_post = mysqli_query($database , $sql);
 
     if ($delete_post) {
