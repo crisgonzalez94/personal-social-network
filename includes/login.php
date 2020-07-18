@@ -25,6 +25,7 @@
           setcookie("user[username]" , $user['username'] );
           setcookie("user[email]" , $user['email'] );
           setcookie("user[picture]" , $user['picture'] );
+          setcookie("user[admin]" , $user['admin'] );
 
           /*Refresh adverting login is successful and with username*/
           header("Location: index.php?login=successful");

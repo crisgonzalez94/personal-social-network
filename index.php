@@ -5,13 +5,13 @@
   require 'helpers/substract.php';
   require 'includes/header.php';
 
-  /*If there dates get for logut*/
+  /*If there dates get for logout*/
   if(isset($_GET['logout'])){
     /*Delete the user cookie and restart*/
     setcookie('user[id]','', time()-100 );
     setcookie('user[username]','', time()-100 );
     setcookie('user[email]','', time()-100 );
-    setcookie('user[photo]','', time()-100 );
+    setcookie('user[picture]','', time()-100 );
     setcookie('user[admin]','', time()-100 );
     header('location: index.php');
   }
@@ -72,6 +72,9 @@
         break;
       case 'galery':
         require 'pages/galery.php';
+        break;
+      case 'user-settings':
+        require 'pages/user-settings.php';
         break;
       default:
         require 'pages/home.php';
