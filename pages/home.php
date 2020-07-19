@@ -25,7 +25,7 @@
     </div>
     <div class="col-md-6 position-static p-4 pl-md-0">
       <h4 class="mt-0"><?= $title  ?></h4>
-      <p><?= $biography  ?>/p>
+      <p><?= $biography  ?></p>
     </div>
   </div>
 
