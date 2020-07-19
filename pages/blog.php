@@ -100,8 +100,9 @@
         $query = mysqli_query($database , $sql);
 
         if($query && mysqli_num_rows($query) == 1){
-          $name_user_comment = mysqli_fetch_assoc($query)['username'];
-          $picture_user_comment = mysqli_fetch_assoc($query)['picture'];
+          $user_comment = mysqli_fetch_assoc($query);
+          $name_user_comment = $user_comment['username'];
+          $picture_user_comment = $user_comment['picture'];
         }
 
        ?>

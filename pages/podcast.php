@@ -32,7 +32,7 @@
       </div>
       <div class="col-md-8">
         <div class="card-body">
-          <h5 class="card-title"><?= $title ?></h5>
+          <h3 class="card-title h2"><?= $title ?></h3>
           <p class="card-text"><?= $short_description ?></p>
           <audio controls>
              <source src="assets/audios/podcast/<?= $audio ?>" type="audio/mpeg"></source>

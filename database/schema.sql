@@ -164,29 +164,53 @@ INSERT INTO users VALUES(
   True
 );
 
-INSERT INTO home VALUES(
+INSERT INTO users VALUES(
   null ,
-  'Soy el mejor' ,
-  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' ,
-  'profile-autor-image.jpg'
+  'Cristian' ,
+  'cristian@gmail.com' ,
+  '1234' ,
+  'people-04.jpg' ,
+  False
 );
 
-INSERT INTO podcasts VALUES(null ,
-  'Primer podcast' ,
-  'Podcast de prueba' ,
-  '1.jpg' ,
-  CURDATE()
+INSERT INTO users VALUES(
+  null ,
+  'Marixa' ,
+  'marixa@yahoo.com' ,
+  '1234' ,
+  'people-02.jpg' ,
+  False
 );
 
-INSERT INTO events VALUES(
+INSERT INTO users VALUES(
   null ,
-  'Fiesta en la calle' ,
-  'La fiesta en la calle es way' ,
-  'Por favor venir con corbatas' ,
-  '1.jpg' ,
-  '2.jpg' ,
-  CURDATE()
+  'Roxy' ,
+  'roxy@hotmail.com' ,
+  '1234' ,
+  'people-03.jpg' ,
+  False
 );
+
+INSERT INTO users VALUES(
+  null ,
+  'Jenny' ,
+  'jenny@outlock.com' ,
+  '1234' ,
+  'people-05.jpg' ,
+  False
+);
+
+INSERT INTO users VALUES(
+  null ,
+  'Carl' ,
+  'carl@outlock.com' ,
+  '1234' ,
+  'people-06.jpg' ,
+  False
+);
+
+
+
 
 INSERT INTO site_information VALUES(null ,
   'https://www.facebook.com/' ,
